@@ -29,10 +29,13 @@ window.addEventListener('load', function() {
     var hour = date.getHours();
     var min = date.getMinutes();
     var contHours = document.createElement('div');
+    if (min < 10) {
+      min = '0' + min;
+    }
     
     contHours.innerText = hour + ':' + min;
     tweetbox.insertBefore(contHours, tweetbox.childNodes[0]);
-
+    
     // Para volver  al inicio, sin ningun mensaje escrito
     txtTwittear.value = '';
     buttonTwitter.className = 'hidden';
