@@ -37,6 +37,16 @@ window.addEventListener('load', function() {
     if (counter > 0 && counter <= 140) {
       buttonTwitter.disabled = false;
     } else buttonTwitter.disabled = true;
+
+    if (counter >= 120 && counter < 130) {
+      letters.style.color = 'orange';
+    } else if (counter > 130 && counter <= 140) {
+      letters.style.color = 'pink';
+    } else if (counter > 140) {
+      letters.style.color = 'red';
+    } else {
+      letters.style.color = 'black';
+    }
   }
 });
   
