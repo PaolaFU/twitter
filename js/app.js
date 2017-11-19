@@ -7,10 +7,13 @@ window.addEventListener('load', function() {
 
   var counter = 0;
   // Evento click para el boton Twittear
-  buttonTwitter.addEventListener('click', addTwitter);
+  buttonTwitter.addEventListener('click', addTwitter); 
 
+  // Evento keyup para deshabilitar boton
   txtTwittear.addEventListener('keyup', deshabilityBtn);
-  // txtTwittear.addEventListener('keydown', contLetters);
+  
+  // Evento click para que por cada enter agrande txt twitter
+  txtTwittear.addEventListener('input', enters);
 
   // Funcion para agregar un nuevo tweet
   function addTwitter(event) {
@@ -32,6 +35,7 @@ window.addEventListener('load', function() {
   function deshabilityBtn(event) {
     event.preventDefault();
     counter = txtTwittear.value.length;
+    // Contar de manera regresiva
     letters.textContent = 140 - counter;
 
     if (counter > 0 && counter <= 140) {
@@ -47,6 +51,11 @@ window.addEventListener('load', function() {
     } else {
       letters.style.color = 'black';
     }
+  }
+  // funcion para agrandar txtTwittear
+  function enters(event) {
+    txtTwittear.style.height = 'inherit';
+    txtTwittear.style.height = txtTwittear.scrollHeight + 'px';
   }
 });
   
