@@ -24,6 +24,15 @@ window.addEventListener('load', function() {
     tweetbox.appendChild(tweet);
     containerTwitter.insertBefore(tweetbox, containerTwitter.firstElementChild);
     tweetbox.classList.add('tweets');
+
+    var date = new Date();
+    var hour = date.getHours();
+    var min = date.getMinutes();
+    var contHours = document.createElement('div');
+    
+    contHours.innerText = hour + ':' + min;
+    tweetbox.insertBefore(contHours, tweetbox.childNodes[0]);
+
     // Para volver  al inicio, sin ningun mensaje escrito
     txtTwittear.value = '';
     buttonTwitter.className = 'hidden';
