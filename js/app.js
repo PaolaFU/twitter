@@ -54,10 +54,10 @@ window.addEventListener('load', function() {
       buttonTwitter.disabled = false;
     } else buttonTwitter.disabled = true;
 
-    if (counter >= 120 && counter < 130) {
-      letters.style.color = 'orange';
+    if (counter >= 120 && counter <= 130) {
+      letters.style.color = 'gold';
     } else if (counter > 130 && counter <= 140) {
-      letters.style.color = 'pink';
+      letters.style.color = 'blue';
     } else if (counter > 140) {
       letters.style.color = 'red';
     } else {
