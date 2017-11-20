@@ -7,75 +7,116 @@
      background-repeat: no-repeat;
      background-size: cover;
  }
-
+header{
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    top: 0;
+}
 li{
     display: inline-block;
-    
+    margin: 12px;
+    color: gray;
 }
-ul{
-    text-align: center;
-    background-color: white;
+a {
+    text-decoration: none;
+    color:#212F3C;    
+    font-family: arial;
+    font-weight: bold;
+    padding: 10px;
+}
+ header ul li a:hover{
+    border-bottom: 3px solid #1DA1F2;
+    color: #1DA1F2;
+   
 }
 .tweeter{
     color: #1da1f2;
+    margin: 0 220px 0 220px;
 }
 
-
-
-
-
- header div{
-    background-color: #50abf1;
- }
-
- .twittear-section .box{
-     margin: 30px 80px;
+.search {
+    border-radius: 20px;
+    background-color: #EBF5FB;
+    padding: 5px;
+    border: 1px solid #1DA1F2;
+}
+ input{
+    border: none;
+    background-color: #EBF5FB;
+    
+}
+.twittear-section .box{
+     /*margin: 80px 80px;*/
      background-color: #e5f4f9;
-     
+     width: 550px;
+     float: right;
+     margin-bottom: 50px;
  }
+.data{
+    width: 550px;
+    height: 200px;
+    background-color: white; 
+    
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 120px;
+    float: left;
+}
+.data-section img{
+    border-radius: 50px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.data-section p, h2{
+    text-align: center;
+}
 
  textarea{
      resize: none;
      border: 2px solid #50abf1;
      border-radius: 8px;
      width: 520px;
-     margin: 10px;
-    
-     
-     
+     margin: 10px; 
  }
 
  .tweets{
      /*text-align: center;*/
      background-color: white;
-     /*border: 2px solid red;*/
      margin: 2px 60px;
      border-radius: 8px;
      width: 90%;
      padding: 10px;
-     clear: right;
     
-
-     
  }
  
-
-
- #btn-twittear{
+#btn-twittear, .btn-twt{
     background-color: #50abf1;
 	border-radius: 10px;
     border: transparent;
     width: 80px;
     height: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
 }
+.box div #count-letters{
+    margin-left:  400px;
+}
+
 .twittear-section{
-    float: right;
-
+    display: inline-block;
+    margin-top: 130px;
 }
 
-#section-container, textarea{
+#section-container, textarea, .count-letters{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+}
+h2, p{
+    font-size: 25px;
 }
 #count-letters{
     position: right;

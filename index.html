@@ -15,15 +15,22 @@
             <li class="fa fa-bell-o"><a href="#">Notificaciones</a></li>
             <li class="fa fa-envelope-o"><a href="#"></i>Mensajes</a></li>
             <li class="tweeter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
-            <li class="search"><input type="text" name="" value="Busca en twitter">
+            <li class="search"><input type="text" name="" placeholder="Busca en twitter">
                 <i class="fa fa-search" aria-hidden="true"></i></li>
             <li class="user"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></li>
-            <li><button>Twittear</button></li>
+            <li><button class ="btn-twt">Twittear</button></li>
         </ul>        
     </header>
     <!--Seccion de presentacion-->
-    <section class= "data-section">
+    
 
+    <section class= "data-section">
+            <div class="data">
+                <img src="assets/img/laboratoria.jpg" alt="">
+                <h2>Retos de codigo</h2>
+                <p>Soy estudiante de Laboratoria</p>
+               
+            </div>
     </section>
     <!--Seccion para ingresar nuevo tweet-->
     <section class ="twittear-section">
@@ -32,7 +39,7 @@
                     <textarea id="msj-twittear" type="text" name="msj-twittear"  placeholder="¿Qué está pasando?" cols="50" rows="3"></textarea>
             </form>
                 <div>  
-                    <button  id="btn-twittear" type="submit" class="hidden" disabled ='true'>twittear</button>
+                    <button  id="btn-twittear" type="submit" class="hidden" disabled ='true'>Twittear</button>
                     <span id="count-letters">140</span>
                 </div>
             
