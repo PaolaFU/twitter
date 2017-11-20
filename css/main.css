@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box; 
+    margin:0;
+}
+ body{
+     background-image: url(../assets/img/fondo1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+li{
+    display: inline-block;
+    
+}
+ul{
+    text-align: center;
+    background-color: white;
+}
+.tweeter{
+    color: #1da1f2;
+}
+
+
+
+
+
+ header div{
+    background-color: #50abf1;
+ }
+
+ .twittear-section .box{
+     margin: 30px 80px;
+     background-color: #e5f4f9;
+     
+ }
+
+ textarea{
+     resize: none;
+     border: 2px solid #50abf1;
+     border-radius: 8px;
+     width: 520px;
+     margin: 10px;
+    
+     
+     
+ }
+
+ .tweets{
+     /*text-align: center;*/
+     background-color: white;
+     /*border: 2px solid red;*/
+     margin: 2px 60px;
+     border-radius: 8px;
+     width: 90%;
+     padding: 10px;
+     clear: right;
+    
+
+     
+ }
+ 
+
+
+ #btn-twittear{
+    background-color: #50abf1;
+	border-radius: 10px;
+    border: transparent;
+    width: 80px;
+    height: 30px;
+}
+.twittear-section{
+    float: right;
+
+}
+
+#section-container, textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+#count-letters{
+    position: right;
+}
+
+#btn-twittear, #count-letters{
+    margin: 10px;
+}
