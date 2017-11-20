@@ -80,6 +80,8 @@ a {
      border-radius: 8px;
      width: 520px;
      margin: 10px; 
+     /*desaparece el scroll*/
+     overflow:hidden;
  }
 
  .tweets{
